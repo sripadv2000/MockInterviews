@@ -46,4 +46,103 @@ In the body tag,
 <!-- ... -->HTML comments
 
 5. Style and Colors
+We can colour the text and also add some background colour. We are going to see how to add some basic colours onto the elements for HTML.
+In the paragraph tag, I can pass in attribute. So in HTML, in addition to just defining the tag, I can also give the HTML tag certain information.
+These are called attributes or properties or parameters.
+<p style="color: blue; background-color: red;">
+
+6. Formatting a Page
+HEre we use various HTML tags to layout the structure of the website.
+Basically every website has 3 sections. The header, main and footer.
+Inside the body, 
+put <header> ... </header>
+<main> ... </main>
+<footer> ... </footer>
+A lot times in the header, we will have navigation links, like  the home page, the about page, Contact Us page.
+The <nav> ... </nav> tag has all the navigation elements.
+
+Imagine we are buildinga ablogging website, then we have the blog posts in the main section.
+Inside the <article> ... </article> tags, we can write the blog posts.
+<section> ... </section> tags helps in segregating content and putting them as different sections.
+A lot of websites will have advertisements, so I could use aside tag to define that.
+<aside> ... </aside> tag would just mean like this content is on the page and it is getting shown to the users but it's not directly related to the core content of our website.
+
+Usingall these tags to organise the code helps other developers and me when I again visit the code file.
+It also helps in Search Engine Optimization. If the website has SEO, then it becomes easy to google to go read through the site and figure out what its about and when you use these very specific tags.
+
+7. Links
+Links are used to link my website to the other websites on the internet so that I could create a link that would bring my users to like google.com.
+If I want to build a navigation list, then I could have links to the other pages of my website that users could click and then they go to those pages.
+I can also have links to the files things like images or PDFs and you can create those links and then users can look at those images or PDFs.
+We need to use a tag <a>
+And to that tag, we need to pass some information.
+<a href="https://www.google.com"> <h1>Google's Homepage </h1></a>
+When we use href, we have to be very specific about where we are linking the website.
+So use https:// also.
+By clicking on that link, we are taken to other website in the same tab.
+So passing the target parameter to the <a> tag, <a href="https://www.google.com" target="_blank"> <h1>Google's Homepage </h1></a>
+We can also link to other pages of our html file.
+<a href="page2.html"><h1>Home</h1></a>
+<a href="dir1/pag3.html"><h1>About</h1></a>
+<a href="cat.jpg">Cat</a>
+
+8. Images
+<img src="https://hotpics.com" alt="A hot heroine" />
+The first thing we should give our image tag is the location in the src.
+Sometimes the image we provide location to is either deleted or can't be loaded by the browser.
+So we have alt tag as a backup. 
+We can alo specify the width and height of the image.
+<img width="100" height="100" src="https://hotpics.com" alt="A hot heroine" />
+While specifying the width and height of the image, it is good to keep in mind the aspect ratio.
+Note: In addition to setting both the width and height, you can choose to only set the width or height.
+By only setting one, HTML will automatically adjust the aspect ratio for you.
+So if you only set width="100", HTML will automatically resize the height correctly.
+By enclosing the img tag within <a> and </a>, that image will act like a link.
+
+9. Videos and YouTube iFrames
+How to include a video saved on the computer and put it onto the website and how to include a YouTube video into the website.
+<video src="temp.mp4" autoplay poster="thumb.jpg" controls width="500" loop> This text shows up if the video is not available </video>
+Without mentioning controls, the video just displays and we cant play or control the video.
+To keep the aspect ratio, just specify only the width or only height.
+To keep a thumbnail, we can add that in poster attribute.
+We can also specfy whether we can autoplay this video or not.
+We can also add this loop attribute.
+If we want to add a YT video, then in the share option of the video, there is an EMBED option. That gives us a HTML code.
+
+10. Lists
+HTML allows you to list out a group of items and it provides us with a couple of differet tags to do that.
+There will be a lot of scenarios where we want to list something out maybe a list of names or the list of steps in a recipe.
+We can use specific tags in HTML to format those lists nd make them look really good.
+The first type of list is an unordered list that does'nt have a particular order.
+<ul>
+ <li><a href="#">Apples</a></li>
+ <li>Mangoes</li>
+ <li>Bananas</li>
+</ul>
+
+There is also an ordered list.
+<ol type="I">
+ <li><a href="#">Boil water</a></li>
+ <li>Add maggi</li>
+ <li>Add masala and stir.</li>
+</ol>
+The default type is numbers, we can specify the type of ordered list.
+
+There is also a description list and this is a special type of list where you can list out items and then you can describe those items so you can create a description list with these DL tags.
+<dl>
+ <dt>Apples</dt>
+ <dd>- they are red</dd>
+</dl>
+
+
+
+
+
+
+
  
+
+
+
+
+
