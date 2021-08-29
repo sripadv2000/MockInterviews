@@ -1,0 +1,41 @@
+ML is a subset of AI. It focuses mainly on the designing of systems, thereby allowing them to learn and make predictions based on some experience which is data in case of machines.
+ML helps the computer to act and take data driven decisions rather than explicitly programmed to carry out a certain task.
+These programs are designed to learn and improve when subjected to new data.
+..................
+.      AI        .
+..................
+...    ML      ...
+..................
+.....   DL   .....
+..................
+AI is a technique which enables machines to mimic human behaviour.
+ML is a subset of AI technique which use statistical methods to enable machines to improve with experience.
+Deep Learning DL is a subset of ML which make the computation of multi-layer neural network feasible.
+
+ML Types:
+-Supervised
+-Unsupervised
+-Reinforcement
+
+-Supervised learning if where I have input variables X and output variable Y, and I use an algorithm to learn the mapping function from the input to the output.
+- y= f(x)
+Supervised Learning Algorithms
+-Linear Regression
+-Random Forest
+-Support Vector Machines
+
+Supervised Examples and Use Cases:
+-Cortana
+-Weather app
+-Biometric Attendance
+-Supervised learning in Banking
+-Supervised learning in Healthcare
+-Supervised learning in Retail
+
+-Unsupervised learning if where I have input variable X and no corresponding output variable.
+- The goal pf unsupervised learning is to model the underlying structure or distribution in the data inorder to learn more about the data.
+
+Unsupervised Learning Algorithms
+-Apriori Algorithm 
+-Random Forest
+-Support Vector Machines
