@@ -39,3 +39,12 @@ Unsupervised Learning Algorithms
 -Apriori Algorithm 
 -Random Forest
 -Support Vector Machines
+
+Unsupervised examples and Use Cases
+
+Reinforcement learning
+
+AI vs ML vs DL
+ML uses algorithms to parse data, learn from that data, and make informed decisions based on what it has learned.
+DL structures algorithms in layers to create an artificial "neural network" that can learn and make intelligent decisions on its owm.
+DL is a subfield of ML. While both fall under the broad category of AI, DL is usually what's behind the most human-like AI.
