@@ -1,0 +1,43 @@
+Python OOPS Corey Schafer
+
+Classes are used throughout most modern programming languages and there's a good reason for that.
+They allow us to logically group our data and functions in such a way that's easy to reuse and also easy to build upon if need be.
+The data and methods associated for a specific class are called attributes and methods.
+
+The instance variables contain data that is unique to each instance.
+
+Take care of the 'self' argument.
+
+Code:
+
+class Employee:
+    def __init__(self,first,last,pay):
+        self.first=first
+        self.last=last
+        self.pay=pay
+        self.email = first+"."+last+"@company.com"
+
+    def fullname(self):
+        return f'{self.first} {self.last}'
+        
+
+emp1 = Employee("Sripad","Vayu",3000)
+emp2 = Employee("Nitin","Vayu",6000)
+
+print(emp1.first)
+print(emp2.email)
+
+print(emp1.fullname()) # print(Employee.fullname(emp1))
+print(emp2.fullname()) # print(Employee.fullname(emp2))
+
+O/P:
+Sripad
+Nitin.Vayu@company.com
+Sripad Vayu
+Nitin Vayu
+
+Python OOP Tutorial 2: Class Variables
+
+Instance variables are those set in the methods using 'self' keyword.
+Class variables are those which are shared among all instances of the class.
+Instance variables can be unique for each instance like our names, email, class variables should be the same.
