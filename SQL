@@ -1,0 +1,152 @@
+1Q) What is the difference between Delete and Truncate commands?
+Delete
+- Delete command is used to delete a row in a table.
+- You can rollback data after using delete statement.
+- It is a DML command.
+- It is slower than truncate statement.
+
+Truncate
+- Truncate command is used to delete all the rows from the table.
+- You cannot rollback data.
+- It is a DDL command.
+- It is faster.
+
+2Q) What are the different subsets of SQL?
+- DDL - Consists of the commands that can be used to define database schema.
+- DML - Consists of the commands that deals with the manipulation of data present in database.
+- DCL - Includes commands which deal with the rights, permissions and other controls of the database system.
+- TCL - Includes commands which deal with the transaction of database.
+
+3Q) What do you mean by DBMS? What are its different types?
+A DBMS is a software application that interacts with the user, applications and the database itself to capture and analyse data.
+The data stored in the database can be modified, retrieved and deleted, and can be of any type like strings, numbers, images, etc.
+
+The different types of database are HIERARCHIAL, NETWORK, RELATIONAL, OBJECT-ORIENTED.
+
+4Q) What do you mean by a table and field in SQL?
+A table refers to a collection of data in an organised manner in form of rows and columns.
+A field refers to the number of columns in a table.
+
+5Q) What are joins in SQL?
+A join clause is used to combine rows from two or more tables, based on a related column between them.
+It is used to merge two tables or retrieve data from there.
+There are 4 joins in SQL namely: INNER JOIN, FULL JOIN, LEFT JOIN, RIGHT JOIN.
+
+6Q) What is the difference between CHAR and VARCHAR2 datatype in SQL?
+Char is used for strings of fixed length. For ex, char(10) can only store 10 characters and will not be able to store a string of any other length.
+Varchar2 is used for character strings of variable length. For ex, varchar2(10) can store any length i.e, 6,8,2 in this variable.
+
+7Q) What is a primary key?
+A set of attributes that can be used to uniquely identify every tuple is a primary key.
+So, if there are 3-4 candidate keys present in a relationship, then out of those, one can be chosen as a primary key.
+
+8Q) What are constraints?
+Constraints are used to specify the limit on the data type of the table. It can be specified while creating or altering the table statement.
+NOT NULL - Ensures that a NULL value cannot be stored in a column.
+UNIQUE - This constraint makes sure that all the values in a column are different.
+CHECK - This constraint ensures that all the values in a column satisfy a specific condition.
+DEFAULT - This constraint consists of a set of default values for a column when no value is specified.
+INDEX - This constraint is used to create and retrieve data from the database very quickly.
+
+9Q) What is the difference between SQL and MySQL?
+SQL is a standard language which stands for Structured Query Language based on the english language.
+SQL is the core of relational database which is used for accessing and managing database.
+
+MySQL is an open-source relational database management system that works on many platforms.
+It provides multi-user access to support many storage engines and is backed by Oracle.
+
+10Q) What is a unique key?
+Unique identifies a single row in the table.
+Multiple values allowed per table.
+Null values are allowed.
+Duplicate values are not allowed.
+
+11Q) What is a foreign key?
+Foreign key maintains referential integrity by enforcing a link between the data in two tables.
+The foreign key in the child table references the primary key in the parent table.
+The foreign key constraint prevents actions that would destroy links between child and parent tables.
+
+12Q) What do you mean by data integrity?
+Data Integrity defines Accuracy of data, Consistency of data, Integrity Constraints to enforce business rules on data.
+
+13Q) What is the difference between clustered and non clustered index in SQL?
+Clustered Index
+- Clustered Index is used for easy retrieval of data from the database and is faster.
+- Clustered Index alters the way records are stored in a database as it sorts out rows by column which is said to be Clustered Index.
+- One table can only have one Clustered Index.
+
+Non Clustered Index
+- Non Clustered Index is used for easy retrieval of data from the database and is slower.
+- Non Clustered Index does'nt alter the way records are stored in a database, but it creates a separate object within a table which points back to the original table rows after searching.
+- One table can have many Non Clustered Index.
+
+14Q) Write a SQL query to display the current date.
+In SQL, there is a built-in function GetDate() which helps to return the current timestamp/date.
+EX: SELECT GETDATE();
+REsult: '2021-03-09 18:17:29.160'
+
+15Q) What are the different types of JOINS?
+INNER JOIN - This join returns those records which have values in both the tables.
+FULL JOIN - This join returns all those records which either have a match in the left or the right table.
+LEFT JOIN - This join returns records from the left table, and also those records which satisfy the condition fro the right table.
+RIGHT JOIN - This join returns records from the right table, and also those records which satisfy the condition from the left table.
+
+16Q) What do you mean by Denornalization?
+Denornalization refers to a technique which is used to access data from higher to lower forms of a database.
+It increases the performance of the entire infrastructure as it introduces redundancy into a table.
+It Adds the redundant data into a table by incorporating database queries that combine data from various tables into a single table.
+
+17Q) What are Entities and Relationships?
+Entities
+A person, place, or thing in the real world about which data can be stored in a database.
+Tables store data that represents one type of entity. For ex, A bank database has a customer table to store customer information.
+Customer table stores this information as a set of attributes(columns within the table) for each customer.
+
+Relationships
+Relation or links between entities that have something to do with each other.
+For ex: The customer name is related to the customer account number and contact information, which might be in the same table.
+There can also ne relationships between separate tables(for ex, customer to accounts).
+
+18Q) What is an Index?
+Performance Tuning Method
+Allows faster retrieval of records from the table
+Creates an entry for each value
+
+19Q) What are different types of indexes?
+Unique Index
+This index does not allow the field to have duplicate values if the column is unique indexed.
+If a primary key is defined, a unique index can be applied automatically.
+
+Clustered Index
+This index reorders the physical order of the table and searches based on the basis of key values. 
+Each table can have one clustered index.
+
+Non Clustered Index
+Non Clustered Index does'nt alter the physical order of the table and maintains a logical order of the data.
+Each table can have many non clustered indexes.
+
+20Q) What is Normalization and what are its advantages?
+Normalization is the process of organizing data to avoid duplication and redundancy.
+
+Advantages of Normalization:
+- Better database organization.
+- More tables with smaller rows.
+- Efficient data access.
+- Greater flexibility for queries.
+- Quickly find the information.
+- Easier to implement security.
+- Allows easy modification.
+- Reduction of redundant and duplicate data
+- More compact database.
+- Ensure consistent data after modification.
+
+21Q) What is the difference between DROP and TRUNCATE commands?
+
+
+
+
+
+
+
+
+
