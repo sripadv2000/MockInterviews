@@ -1,0 +1,28 @@
+Body Analogy
+The skeleton is HTML, Hair and muscles with which a man looks attractive is CSS and Brain is Javascript.
+
+Car Analogy
+The Metallic body is HTML, Colour and Designs with which the car looks attractive is CSS and the Engine is Javascript.
+
+HTML
+- Stands for Hypertext markup Language
+- It is basically a standard markup language for giving a static skeleton to web application and websites.
+- It is a well standardized system.
+
+CSS
+- Cascading style sheets is known as CSS is a style sheet language that used to handle the presentation of the web page containing HTML.
+- It makes our websites beautiful and modern looking.
+
+Javascript
+- JS is a high level dynamic interpreted programming language.
+- It allows client-side scripting to create completely dynamic web applications and websites.
+
+- JS was initially designed for making pages alive.
+- Scripts can be executed in the browser itself.
+- JS and Java are different programming languages.
+- It can be executed on the browser as well as the server.
+- Js is a safe language when used in browser.
+- There are languages that get "transpiled" to JS.(Ex Coffeescript, Typescript)
+
+ 
+
