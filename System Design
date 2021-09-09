@@ -1,0 +1,90 @@
+What is Scalability ? | Concurrency | Interaction rates | System Design Course | Ravindrababu Ravula
+
+Scalability
+
+Scalability is an ability to adjust the capacity of the system to cost efficiently fulfill the demands.
+Scalability usually means an ability to handle more users, clients, data, transactions, or requests without affecting the user experience.
+It is important to remember that scalability should allow us to scale down as much as scale up and that scaling should ne relatively cheap and quich to do.
+
+The ability to scale is measured in different dimensions, as we may need to scale in different ways.
+
+Handling more data: How much data you are able to process/store is an important metric to determine the scalability of a system.
+
+You will have to efficiently handle more user accounts, more products, more location data, and more pieces of digital content.
+
+Processing more data puts pressure on your system, as data needs to be sorted, search through, read from disks, and sent over the network.
+
+Especially today, with the growing popularity of big data analytics, companies become greedier about storing ever-growing amounts of data without ever deleting it.
+
+
+Handling Higher concurrency levels
+
+Concurrency measures how many clients your system can serve at the same time.
+If you are building a web-based application, concurrency means how many users can use your application at the same time without affecting user experience.
+
+Concurrency is difficult, as your servers have a limited amount of CPUs and execution threads.
+
+It is even more difficult, as you may need to synchronize parallel execution of your code to ensure consistency of data.
+Higher concurrency means more open connections, more active threads, more messages being processed at the same time, and more CPU context switches.
+
+
+Handling higher interaction rates
+
+The third dimension of scalability is the rate of interactions between your system and your clients.
+It is related to concurrency, but is slightly different dimension.
+
+The rate of interactions measures how often your clients exchange information with your servers.
+
+For ex:
+1) If you are building a website, your clients would navigate from page to page every 15 to 120 seconds.
+2) If you are buildinga a multiplayer mobile game, however, you may need to exchange multiple times per second.
+ 
+The main challenge related to the interaction rate is latency. 
+As your interactions rate grows, you need to be able to serve responses quickly, which requires faster reads/writes and often drives requirements for higher concurrency levels.
+
+
+Horizontal vs Vertical Scalability | Single Server Configuration| Round-Robin DNS | RBR
+
+EVOLUTION FROM A SINGLE SERVER TO A GLOBAL AUDIENCE
+Let's begin with a single-server setup, as it is the simplest configuration possible and this is how many small projects get started and we will be evolving step by step.
+
+SINGLE-SERVER CONFIGURATION
+
+1) Users connect to the DNS to obtain the Internet Protocol(IP) address of the ........... where your website is hosted.
+2) Once the IP address is obtained, they ..... HTTP requests directly to your web server.
+So once the connection is establised, the data will flow and this is how the Single Server basically works.
+
+Small websites may not even need a dedicated server and can often be hosted on a virtual private server(VPS) or on shared hosting.
+What is a Virtual Private Server?
+Virtual Private Server is a term used by hosting providers to descrie a virtual machine for rent. When you purchase a VPS instance, it is hosted together with other VPS instances on a shared host machine.
+1) VPS behaves as a regular server.
+2) VPS is cheaper than a dedicated server, as multiple instances can exist at the same time on the same physical machine.
+3) VPS is a good starting point, as it is cheap and can usually be upgraded instantly(you can add more random access memory(RAM) and CPU server with a click of a button).
+
+I)Vertical Scalability
+Vertical Scalability is accomplished by upgrading the hardware and/or network throughput. It is often the simplest solution for short term scalability, as it does not require architectural changes to your application.
+
+If you are running your server with 8GB of memory, it is easy to upgrade to 32GB or even 128GB by just replacing the hardware.
+
+II) Isolation of Services
+Vertical Scalability is not the only option at this early stage of evolution.
+Another simple solution is moving different parts of the system to separate physical servers by installing each type of service on a separate physical machine.
+
+A service is an application like a webserver(for ex. Apache) or a database engine(for ex. MySQL). 
+This gives your web server and your database a separate dedicated machine.
+In the same manner, you can control other services like FTP, DNS and others, each on a dedicated physical machine.
+
+III) Content Delivery Network
+As applications grow and get more customers, it becomes beneficial to offload some of the traffic to a third-party content delivery network(CDN) service.
+
+
+
+
+
+
+
+
+
+
+
+
