@@ -40,7 +40,7 @@ For ex:
 2) If you are buildinga a multiplayer mobile game, however, you may need to exchange multiple times per second.
  
 The main challenge related to the interaction rate is latency. 
-As your interactions rate grows, you need to be able to serve responses quickly, which requires faster reads/writes and often drives requirements for higher concurrency levels.
+As your interactions rate grows,you need to be able to serve responses quickly,which requires faster reads/writes and often drives requirements for higher concurrency levels.
 
 
 Horizontal vs Vertical Scalability | Single Server Configuration| Round-Robin DNS | RBR
@@ -56,13 +56,15 @@ So once the connection is establised, the data will flow and this is how the Sin
 
 Small websites may not even need a dedicated server and can often be hosted on a virtual private server(VPS) or on shared hosting.
 What is a Virtual Private Server?
-Virtual Private Server is a term used by hosting providers to descrie a virtual machine for rent. When you purchase a VPS instance, it is hosted together with other VPS instances on a shared host machine.
+Virtual Private Server is a term used by hosting providers to descrie a virtual machine for rent. 
+When you purchase a VPS instance, it is hosted together with other VPS instances on a shared host machine.
 1) VPS behaves as a regular server.
 2) VPS is cheaper than a dedicated server, as multiple instances can exist at the same time on the same physical machine.
-3) VPS is a good starting point, as it is cheap and can usually be upgraded instantly(you can add more random access memory(RAM) and CPU server with a click of a button).
+3) VPS is a good starting point, as it is cheap and can usually be upgraded instantly(you can add more random access memory(RAM) and CPU power with a click of a button).
 
 I)Vertical Scalability
-Vertical Scalability is accomplished by upgrading the hardware and/or network throughput. It is often the simplest solution for short term scalability, as it does not require architectural changes to your application.
+Vertical Scalability is accomplished by upgrading the hardware and/or network throughput. 
+It is often the simplest solution for short term scalability, as it does not require architectural changes to your application.
 
 If you are running your server with 8GB of memory, it is easy to upgrade to 32GB or even 128GB by just replacing the hardware.
 
@@ -76,6 +78,48 @@ In the same manner, you can control other services like FTP, DNS and others, eac
 
 III) Content Delivery Network
 As applications grow and get more customers, it becomes beneficial to offload some of the traffic to a third-party content delivery network(CDN) service.
+
+Clients first connect to the DNS server. Then, they request pages from your servers and load addiitional resources, such as images, CSS, and videos, from your CDN provider.
+As a result, your servers and networks have to deal with reduced traffic, and since CDNs solve a specific problem, we can optimize the way ... serve the content cheaper ... you could.
+
+IV) Horizontal Scalability
+Horizontal Scalability is accomplished by a number of methods to allow increased capacity by adding more servers.
+Horizontal Scalability is considered the holy grail of scalability, as it overcomes the increasing cost of capacity unit associated with scaling by buying ever-stronger hardware.
+
+The thing that distinguishes horizontally scalable systems from the previous evolution stages is that each server role in our data center can be scaled by adding more servers.
+That can usually be implemented in stages of partially horizontal scalability, where some services scale horizontally and others do not.
+
+Achieving true horizontal scalability is usually difficult and expensive.
+Therefore, systems should start by scaling horizontally in areas where it is the easiest to achieve, like web servers and cache ... tackle the more difficult areas, like ... other persistent stores.
+At this stage of evolution, some ... would also use a round-robin DNS to distribute traffic among web servers.
+
+
+Scalability | Scalability for Global Audience | geoDNS | Edge Cache | System Design Course | RBR
+SCALABILITY FOR A GLOBAL AUDIENCE
+
+Once you serve millions of users spread across the globe, you will require more than a single data center.
+
+A single data center can host plenty of servers, but it causes clients located on other continents to receive a degraded user experience.(Because the response time is high due to propagation delay).
+
+GeoDNS is a DNS service that allows domain names to be resolved to IP addresses based on the location of the customer.
+
+Edge Cache is a HTTP cache server located near the customer, allowing the customer to partially cache the HTTP traffic.
+Requests from the customer's browser go to the edge cache server.
+The server can then decide to serve the page from the cache, or it can assemble the missing pieces of the page by sending background requests to your servers.
+It can also decide that the page is uncatchable and delegate fully to your web servers.
+Edge-cache servers can serve entire pages or cache fragments of HTTP response.
+
+GeoDNS behaves the same way from the client's perespective.
+However, it serve different IP addresses based on the location of the client.
+A client connecting from Europe may get a different IP address than the client connecting from Australia.
+As a result, clients from both Europe and Australia could connect to the web servers hosted closer to their location.
+
+
+Data Center Infrastructure | Load Balancer | Front Line | System Design Course | Ravindrababu Ravula
+
+In simple words, Data Center is the collection of all servers you have and the data you have.
+It is the set of programs you are running and the hardware you are running them on and also the Data Management Software you are using to manage the data.
+
 
 
 
