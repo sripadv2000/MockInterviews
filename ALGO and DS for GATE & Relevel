@@ -1,0 +1,28 @@
+ALGO and DS for GATE & Relevel | Introduction to Heaps | L:11 | Ravindrababu Ravula
+
+                  INSERT        SEARCH        FIND MAX        DELETE MIN      
+
+UNSORTED          O(1)          O(n)          O(n)            O(n)
+ARRAY
+
+SORTED            O(n)          O(logn)       O(1)            O(n)
+ARRAY
+
+UNSORTED          O(1)          O(n)          O(n)            O(n)
+LINKED LIST
+
+MIN HEAP          O(logn)       O(n)          O(n)            O(logn)
+                                           O(1) FOR
+                                           FIND MIN
+                                           
+Heap: Heap is a complete/ almost complete binary tree.
+
+There are two types of a heap on the basis of the property.
+
+Max-heap: The key present at any node must be greater than the keys present at both of its children.
+The largest key is at the root node.
+
+Mix-heap: The key present at any node must be smaller than the keys present at both of its children.
+The smallest key is at the root node.
+
+Since a Binary Heap is a Complete Binary Tree, it can be easily represented as an array.
