@@ -1,0 +1,123 @@
+What is a Database?
+-Any collection of related information.
+--Ex: Phone Book, Shopping List, Todo List, Facebook's User Base
+
+-Databases can be stored in different ways.
+--Ex: On paper, In your mind, On a computer, Powerpoint, Comments Section.
+
+Computers + Databases = <3
+
+Amazon.com vs Shopping List
+
+1. Amazon.com keeps track of Products, Reviews, Purchase Orders, Credit Cards, Users, Media, etc. whereas the Shopping list keeps track of consuer products that need to be purchased.
+2. Amazon.com has trillions of pieces of information need to be stored ad readily available whereas in the Shopping List, 10-20 pieces of information need to be stored and readily available.
+3. Information is extremely valuable and critical to Amazon.com's functioning whereas in the Shopping ist, the information if for convenience sake only and not necessary for shopping.
+4. Security is essential, Amazon stores people's personal information like Credit Card, SSN, Address, Phone Number whereas security is not important for the Shopping List.
+5. Information is stored on the computer whereas in the Shopping List, Information is hust stored on a piece of paper, or even just in memory.
+
+Computers are great at keeping track of large amounts of data.
+
+DBMS is a special software program that helps users create and maintain a database.
+- Makes it easy to manage large amounts of information.
+- Handles security.
+- Backups.
+- Importing/Exporting data.
+- Concurrency
+- Interacts with software applications.
+-- Programming Languages.
+
+CRUD  
+
+There are 2 types of Databases
+
+Relational database(SQL)
+- Organise data into one or more tables.
+--Each table has columns and rows
+-- A unique key identifies each row.
+
+Non-Relational(noSQL/ not just SQL)
+-Organise data is anything but a traditional table.
+-- Key-value stores
+-- Documents(JSON, XML, etc)
+-- Graphs
+-- Flexible Tables
+
+Relational Databases(SQL)
+-Relational DBMS
+--Helps users create and maintan a relational database.
+--- Ex: mySQL, Oracle, postgreSQL, mariaDB, etc.
+
+- SQL
+- Standardized language for interacting with RDBMS.
+- Used to perform C.R.U.D operations, as well as other administrative tasks(user management, security, backup, etc.)
+- Used to define tables and structures.
+- SQL code used on one RDBMS is not always portable to another without modification.
+
+Non-Relational Databases
+- Document(JSON, BLOB, XML, etc.)
+- Graph(Relational Nodes)
+- Key-Value Hash(Keys are mapped to values(strings, json, blob, etc.))
+
+Non-Relational(noSQL/ not just SQL)
+- Help users create and maintain a non-relational database.
+-- mongoDB, dynamoDB, apache cassandra, firebase, etc.
+
+-Implementation specific
+-- Any non-relational database falls under this category, so there's no set language standard.
+-- Most NRDBMS will implement their own language for performing CRUD and administrative operations on the database.
+
+database Queries
+- Queries are requests made to the DBMS for specific information.
+- As the database's structure become more and more complex, it becomes more difficult to get the specific pieces of information we want.
+- A google search is a query.
+
+WRAP UP
+- Database is any collection of related information.
+- Computer are great for storing databases.
+- DBMS make it easy to create, maintain and secure a database.
+- DBMS allows you to perform CRUD operations and other administrative tasks.
+- Two types of Databases, Relational and Non-Relational.
+- Relational databases use SQL and store data in tables with rows and columns.
+- Non-Relational databases store data using other data structures.
+
+TABLES AND KEYS
+ 
+Structured Query Language(SQL)
+- SQL is a language used for interacting with RDBMS.
+- You can use SQL to get the RDBMS to do things for you
+--Create, retrieve, update and delete data.
+--Create and manage databases.
+--Design and create database tables.
+--Perform administration tasks(security, user management, import/export, etc)
+
+-SQL implementations vary between systems
+--Not all RDBMS' follow the SQL standard to a 'T'
+-- The concepts are the same but the implementation may vary.
+
+SQL is a hybrid language, its basically 4 types of languages in one
+
+- Data Query Language
+--Used to query the database for information.
+--Get information that is already stored here.
+
+- Data Definition Language
+--Used for defining database schemas.
+
+- Data Control Language
+--Used for controlling access to the data in the database.
+
+- Data Manipulation Language
+--Used for inserting, updating and deleting data form the database.
+
+Queries
+- A query is a set of instructions given to the RDBMS(written in SQL) that tell the RDBMS what information you want it to retrieve for you.
+-TONS of data in a DB.
+-Often hidden in a complex schema.
+-Goal is to only get the data you need.
+
+
+
+
+
+
+
