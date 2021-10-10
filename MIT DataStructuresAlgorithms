@@ -1,0 +1,16 @@
+1. Algorithmic Thinking, Peak Finding
+
+Peak Finder
+One Dimensional version
+In an array arr consisting of numbers, find the peak.
+Position i is a peak if arr[i]>= arr[i-1] and arr[i]>= arr[i+1].
+In the case of edges, look only on one side.
+
+Straight forward algorithm:
+1. Start from left
+2. 
+
+2D Version of peal finder
+
+
+
