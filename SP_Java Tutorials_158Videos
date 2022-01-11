@@ -1,1 +1,24 @@
 Data Types in Java
+
+Data Types are of 2 types: Primitive and Non-Primitive.
+Primitive is of 2 types: Boolean(boolean) and Numeric.
+Numeric is of 2 types: Character(char) and Integral
+Integral is of 2 types: Integer(byte,short,int,long) and Floating Point(float,double)
+
+Non-Primitive Data Types(String,Array,Class,Structure,Union,etc.)
+
+The size of boolean is 1bit, but is precisely defined by the JVM.
+char-2byte
+byte-8bit
+short-2byte
+int-4byte
+long-8byte
+float-4byte
+double-8byte
+
+Defining a Data Type:
+int a=10;
+char c='x';
+boolean b=True;
+
+The size of all the Primitive Data Types is fixed whereas that of Non-Primitive Data Types is not fixed.
