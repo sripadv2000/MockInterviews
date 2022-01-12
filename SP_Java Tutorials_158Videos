@@ -1,4 +1,4 @@
-Data Types in Java
+#1 Data Types in Java
 
 Data Types are of 2 types: Primitive and Non-Primitive.
 Primitive is of 2 types: Boolean(boolean) and Numeric.
@@ -22,3 +22,38 @@ char c='x';
 boolean b=True;
 
 The size of all the Primitive Data Types is fixed whereas that of Non-Primitive Data Types is not fixed.
+
+#2 Variables in Java
+
+A java variable is a piece of memory that can contain a data value. A variable thus has a data type.
+Variables are typically used to store information which your Java program needs to do its job.
+There are 3 types of variables:
+1. Local
+2. Instance
+3. Static
+
+class A
+{
+  int a=10; //instance variable
+  static int b=20; //static variable
+  void add()
+  {
+    int c=30,d; //local variables
+    d=a+b+c;
+    S.o.p(d);
+  }
+  void mul()
+  {
+    int e=40,f;//local variables
+    f=a*b*e;
+    S.o.p(e);
+  }
+}
+
+Local Variables
+1. DECLARATION: inside methods,constructor or block.
+2. SCOPE: inside method,constructor or block not outside.
+3. WHEN VARIABLES GETS ALLOCATED IN MEMORY: when method,constructor or blockgets executed,variables are allocated memory, when it exits, variables are destroyed.
+4. STORED MEMORY: Stack Memory
+5. DEFAULT VALUES: Doesn't have any default values. Value should be provided before use.
+6. ACCESS SPECIFIERS: Cannot be used with local variables.
